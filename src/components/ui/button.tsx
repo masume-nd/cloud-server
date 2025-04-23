@@ -25,6 +25,7 @@ const buttonVariants = cva(
           'bg-white text-[#4169E1] border border-[#4169E1] border-solid border-[1.5px]',
         light_green:
           'bg-white text-[#20B2AA] border border-[#20B2AA] border-solid border-[1.5px]',
+        link_style: 'bg-[#F1F4FD]  rounded-3xl'
       },
       size: {
         default: 'h-9 px-4 py-2 has-[>svg]:px-3',

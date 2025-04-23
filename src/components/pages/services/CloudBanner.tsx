@@ -2,8 +2,13 @@
 
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import { useRouter } from 'next/navigation';
+
 
 export default function CloudBanner() {
+
+
+  const router = useRouter()
   return (
     <section className="w-full bg-white py-12" >
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-8">
@@ -44,9 +49,11 @@ export default function CloudBanner() {
           </p>
 
           <div className="flex flex-wrap items-center gap-4">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-2 rounded">
+        
+            <Button onClick={() => router.push('/services/cloud-server')} className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-2 rounded">
               تست رایگان
             </Button>
+       
           </div>
         </div>
         <div className="w-full md:w-1/2 relative">
