@@ -10,9 +10,11 @@ const config: Config = {
     extend: {
       colors: {
         royal: '#4169E1',
+        dark_royal: '#2E4BA0',
+        dark_green: '#168B86',
         mid_green: '#20B2AA',
         light_green: '#9FF0E4',
-        ColoBrand_50: '#F1F4FD'
+        ColoBrand_50: '#F1F4FD',
       },
       fontFamily: {
         // sans: ['var(--font-inter)', ...fontFamily.sans], // or any custom font
