@@ -4,17 +4,14 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 
-
 export default function CloudBanner() {
-
-
-  const router = useRouter()
+  const router = useRouter();
   return (
-    <section className="w-full bg-white py-12" >
+    <section className="w-full bg-white py-12 p-4">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-8">
         <div className="w-full md:w-1/2 text-right">
           <div className="flex items-center">
-            <h1 className="text-4xl font-bold text-blue-700 mb-4">سرور ابری</h1>
+            <h1 className="text-xl md:text-4xl font-bold text-blue-700 mb-4">سرور ابری</h1>
             <span className="mb-2 mr-2 text-[#69778E]">(Cloud Server)</span>
             <span className="inline-block rounded-full bg-gradient-to-r from-[#9FF0E4] to-white  text-sm font-semibold">
               <span className="inline-block rounded-full bg-gradient-to-r from-[#F1FCFB] to-white text-[#20B2AA] m-[1px]  px-4 py-1 text-sm font-semibold">
@@ -23,8 +20,8 @@ export default function CloudBanner() {
             </span>
           </div>
 
-          <h2 className="text-2xl font-semibold text-[#69778E] mb-2">
-            خرید سرور ابری،{' '}
+          <h2 className="text-xl md:text-2xl text-center md:text-right font-semibold text-[#69778E] mb-2">
+            خرید سرور ابری،
             <span className=" text-blue-700">آخرین انتخاب </span> و
             <span className=" text-blue-700 mr-1">بهترین تجربه‌ای </span> که از
             آن پشیمان نمی‌شوید!
@@ -48,12 +45,13 @@ export default function CloudBanner() {
             ۱۰۰ هزار تومان اعتبار هدیه
           </p>
 
-          <div className="flex flex-wrap items-center gap-4">
-        
-            <Button onClick={() => router.push('/services/cloud-server')} className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-2 rounded">
+          <div className="flex items-center gap-4 w-full">
+            <Button
+              onClick={() => router.push('/services/cloud-server')}
+              className="w-full md:w-1/4 bg-blue-600 hover:bg-blue-700 text-white px-12 py-2 rounded"
+            >
               تست رایگان
             </Button>
-       
           </div>
         </div>
         <div className="w-full md:w-1/2 relative">

@@ -12,13 +12,45 @@ import {
 import CommonContainer from './Container';
 
 // Icon
+import { Menu, Phone } from 'lucide-react';
 import { ChevronDown } from 'lucide-react';
+import { Sheet, SheetContent, SheetHeader, SheetTrigger } from '../ui/sheet';
+import Link from 'next/link';
 
+const links = [
+  'سرویس‌ها',
+  'نرم‌افزارها',
+  'تعرفه‌ها',
+  'تخفیفات',
+  'راهنمایی',
+  'راهکارهای ابری',
+  'بلاگ',
+];
 export default function Header() {
   return (
-    <header className="w-full border-b py-3 bg-white text-right">
+    <header className="w-full border-b py-3 bg-white text-right pl-2">
       <CommonContainer>
         <div className="flex items-center gap-2">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="md:hidden">
+                <Menu className="h-12 w-12 " color="#4169E1" />
+              </Button>
+            </SheetTrigger>
+
+            <SheetContent side="left" className="w-64 p-4">
+              <SheetHeader></SheetHeader>
+
+              <nav className="mt-6 flex flex-col space-y-4">
+                {links.map((item, idx) => (
+                  <Link key={idx} href="#">
+                    {item}
+                  </Link>
+                ))}
+              </nav>
+            </SheetContent>
+          </Sheet>
+
           <span className="font-bold text-primary">ابرفردوسی</span>
           <Image
             src="/images/logo.png"
@@ -29,19 +61,20 @@ export default function Header() {
           />
         </div>
 
-        <nav className="flex items-center gap-5 text-sm font-medium text-muted-foreground">
-          <Dropdown label="سرویس‌ها" />
-          <Dropdown label="نرم‌افزارها" />
-          <Dropdown label="تعرفه‌ها" />
-          <Dropdown label="تخفیفات" />
-          <Dropdown label="راهنمایی" />
-          <Dropdown label="راهکارهای ابری" />
-          <Dropdown label="بلاگ" />
+        <nav className="hidden md:flex items-center gap-5 text-sm font-medium text-muted-foreground">
+          {links.map((item, idx) => (
+            <Dropdown key={idx} label={item} />
+          ))}
+
           <span>...</span>
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button variant="light_green">051-38804347 📞</Button>
+          <Button variant="light_green">
+            {' '}
+            <span className="hidden md:block">051-38804347</span>
+            <Phone />
+          </Button>
           <Button variant="royal_blue_outlined">ورود</Button>
           <Button variant="royal_blue">ثبت نام</Button>
         </div>
