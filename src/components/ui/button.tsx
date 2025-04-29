@@ -24,7 +24,7 @@ const buttonVariants = cva(
         royal_blue_outlined:
           'bg-white text-[#4169E1] border border-[#4169E1] border-solid border-[1.5px]',
         light_green:
-          'bg-white text-[#20B2AA] border border-[#20B2AA] border-solid border-[1.5px]',
+          'bg-white text-white bg-[#20B2AA] border border-white border-solid border-[2px]',
         simple: 'bg-white text-[#29347F] p-1 md:px-3 md:py-2',
         disabled: 'bg-[#F1F4FD] text-[#54565B]',
       },

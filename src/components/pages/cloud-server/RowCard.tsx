@@ -13,8 +13,8 @@ const RowCard = ({
   img: string;
 }) => {
   return (
-    <Card className="flex flex-col md:flex-row items-start gap-4 ">
-      <div className="relative w-[40%] md:w-1/4 aspect-[4/3] rounded overflow-hidden">
+    <Card className="flex flex-row items-start gap-4 p-4">
+      <div className="relative w-full md:w-1/2 aspect-[3/3] md:aspect-[4/3] rounded overflow-hidden">
         <Image src={img} alt="..." fill className="object-cover" />
       </div>
       <CardContent className="flex flex-col p-4 space-y-2">

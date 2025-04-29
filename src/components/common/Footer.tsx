@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#4C6EF5] text-white text-sm pt-10 pb-6 px-4 md:px-20">
+    <footer className="bg-[#4169E1] text-white text-sm pt-10 pb-6 px-4 md:px-20">
       <div className="grid grid-cols-2 md:grid-cols-6 gap-6 text-right">
         <div className="space-y-2">
-          <h3 className="text-green-300 font-bold">سرویس‌های رایانش ابری</h3>
+          <h3 className="text-[#67E1D5] font-bold">سرویس‌های رایانش ابری</h3>
           <ul className="space-y-1">
             <li>سرور GPU</li>
             <li>سرور پردازش</li>
@@ -17,7 +17,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="space-y-2">
-          <h3 className="text-green-300 font-bold">تخفیفات رایانش ابری</h3>
+          <h3 className="text-[#67E1D5] font-bold">تخفیفات رایانش ابری</h3>
           <ul className="space-y-1">
             <li>تخفیف دانشجویان و اساتید</li>
             <li>تخفیف صنایع و شرکت‌ها</li>
@@ -29,7 +29,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="space-y-2">
-          <h3 className="text-green-300 font-bold">راهکارهای ابری</h3>
+          <h3 className="text-[#67E1D5] font-bold">راهکارهای ابری</h3>
           <ul className="space-y-1">
             <li>خدمات ابری دانشگاه‌ها</li>
             <li>خدمات ابری سازمان‌ها</li>
@@ -38,7 +38,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="space-y-2">
-          <h3 className="text-green-300 font-bold">ابر اتوماتیک</h3>
+          <h3 className="text-[#67E1D5] font-bold">ابر اتوماتیک</h3>
           <ul className="space-y-1">
             <li>بازارچه ابری</li>
             <li>نرم‌افزارهای محاسبات و پردازش ابری</li>
@@ -46,7 +46,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="space-y-2">
-          <h3 className="text-green-300 font-bold">بیشتر</h3>
+          <h3 className="text-[#67E1D5] font-bold">بیشتر</h3>
           <ul className="space-y-1">
             <li>تعرفه رایانش ابری</li>
             <li>سیاست و قوانین</li>

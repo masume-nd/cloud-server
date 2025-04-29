@@ -70,11 +70,12 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button variant="light_green">
-            {' '}
-            <span className="hidden md:block">051-38804347</span>
-            <Phone />
-          </Button>
+          <div className='bg-[#bae7e5] rounded-md p-0.5'>
+            <Button variant="light_green">
+              <span className="hidden md:block">051-38804347</span>
+              <Phone />
+            </Button>
+          </div>
           <Button variant="royal_blue_outlined">ورود</Button>
           <Button variant="royal_blue">ثبت نام</Button>
         </div>
