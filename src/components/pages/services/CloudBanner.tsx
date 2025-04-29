@@ -11,7 +11,9 @@ export default function CloudBanner() {
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-8">
         <div className="w-full md:w-1/2 text-right">
           <div className="flex items-center">
-            <h1 className="text-xl md:text-4xl font-bold text-blue-700 mb-4">سرور ابری</h1>
+            <h1 className="text-xl md:text-4xl font-bold text-blue-700 mb-4">
+              سرور ابری
+            </h1>
             <span className="mb-2 mr-2 text-[#69778E]">(Cloud Server)</span>
             <span className="inline-block rounded-full bg-gradient-to-r from-[#9FF0E4] to-white  text-sm font-semibold">
               <span className="inline-block rounded-full bg-gradient-to-r from-[#F1FCFB] to-white text-[#20B2AA] m-[1px]  px-4 py-1 text-sm font-semibold">
@@ -64,7 +66,7 @@ export default function CloudBanner() {
           />
           <Button
             variant="outline"
-            className="rounded-full px-5 py-5 text-blue-600 border-blue-600 hover:bg-blue-50 absolute bottom-10 right-[40%]"
+            className="rounded-full px-5 py-5 text-[#3044C5] border-[#9EBBF2] drop-shadow-2xl drop-shadow-[#9EBBF2]  hover:bg-blue-50 absolute bottom-10 right-[40%]"
           >
             ▶ مشاهده ویدئو
           </Button>
