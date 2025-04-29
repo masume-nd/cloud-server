@@ -95,26 +95,56 @@ export default function Footer() {
               خواهیم بود.
             </p>
           </div>
-      <div className="mt-8 flex flex-col md:flex-row md:justify-between items-center space-y-4 md:space-y-0 gap-12">
-        <div className="flex gap-2 mt-4 md:mt-0">
-          <Image src="/images/enamad.png" className="h-8" alt="badge1"  width={24} height={24}/>
-          <Image src="/images/enamad.png" className="h-8" alt="badge1"  width={24} height={24}/>
-          <Image src="/images/enamad.png" className="h-8" alt="badge1"  width={24} height={24}/>
-          <Image src="/images/enamad.png" className="h-8" alt="badge1"  width={24} height={24}/>
-          
-        </div>
-        <div className="flex items-center justify-center gap-4 text-white">
-          <Image src="/icons/telegram.svg" width={16} height={16} alt="" />
-          <Image src="/icons/aparat.svg" width={16} height={16} alt="" />
-          <Image src="/icons/whatsapp.svg" width={16} height={16} alt="" />
-          <Image src="/icons/instagram.svg" width={16} height={16} alt="" />
-          <Image src="/icons/youtube.svg" width={16} height={16} alt="" />
-          <Image src="/icons/x.svg" width={16} height={16} alt="" />
+          <div className="mt-8 flex flex-col md:flex-row md:justify-between items-center space-y-4 md:space-y-0 gap-12">
+            <div className="flex gap-2 mt-4 md:mt-0">
+              <div className="bg-white rounded-sm p-1">
+                <Image
+                  src="/images/enamad.png"
+                  className="h-8"
+                  alt="badge1"
+                  width={24}
+                  height={24}
+                />
+              </div>
+              <div className="bg-white rounded-sm p-1">
+                <Image
+                  src="/images/enamad.png"
+                  className="h-8"
+                  alt="badge1"
+                  width={24}
+                  height={24}
+                />
+              </div>
+              <div className="bg-white rounded-sm p-1">
+                <Image
+                  src="/images/enamad.png"
+                  className="h-8"
+                  alt="badge1"
+                  width={24}
+                  height={24}
+                />
+              </div>
+              <div className="bg-white rounded-sm p-1">
+                <Image
+                  src="/images/enamad.png"
+                  className="h-8"
+                  alt="badge1"
+                  width={24}
+                  height={24}
+                />
+              </div>
+            </div>
+            <div className="flex items-center justify-center gap-4 text-white">
+              <Image src="/icons/telegram.svg" width={16} height={16} alt="" />
+              <Image src="/icons/aparat.svg" width={16} height={16} alt="" />
+              <Image src="/icons/whatsapp.svg" width={16} height={16} alt="" />
+              <Image src="/icons/instagram.svg" width={16} height={16} alt="" />
+              <Image src="/icons/youtube.svg" width={16} height={16} alt="" />
+              <Image src="/icons/x.svg" width={16} height={16} alt="" />
+            </div>
+          </div>
         </div>
       </div>
-        </div>
-      </div>
-
     </footer>
   );
 }

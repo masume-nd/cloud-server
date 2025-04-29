@@ -17,12 +17,14 @@ const RowCard = ({
       <div className="relative w-[40%] md:w-1/4 aspect-[4/3] rounded overflow-hidden">
         <Image src={img} alt="..." fill className="object-cover" />
       </div>
-      <CardContent className="p-4 space-y-2">
+      <CardContent className="flex flex-col p-4 space-y-2">
         <p className="font-bold text-right">{title}</p>
-        <p className="text-sm text-right">{description}</p>
-        <Link href="#" className="text-blue-600 text-sm">
-          ادامه...
-        </Link>
+        <p className="text-sm text-muted-foreground text-right line-clamp-1">{description}</p>
+        <div className='self-end'>
+          <Link href="#" className="text-[#8894A8] text-sm">
+            ادامه...
+          </Link>
+        </div>
       </CardContent>
     </Card>
   );

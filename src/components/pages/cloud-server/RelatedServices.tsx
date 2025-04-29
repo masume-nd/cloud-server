@@ -23,8 +23,7 @@ export default function RelatedServices() {
 
       <Card className="flex flex-col-reverse md:flex-row justify-between items-center gap-4 rounded-2xl mb-14 bg-primary text-white p-4">
         {/* <Image src="/support-agent.png" alt="پشتیبان" className="w-20 h-20 rounded-full" /> */}
-        {/* <div className="flex  items-center space-y-2"> */}
-        <div>
+        <div className="items-center space-y-2">
           <p className="text-sm">
             اگر برای انتخاب یا استفاده نیاز به مشاوره و راهنمایی دارید، همیشه
             آماده ارائه بهترین راهکارها به شما هستیم.
@@ -40,10 +39,9 @@ export default function RelatedServices() {
               <Ticket color="#168B86" /> تیکت پشتیبانی
             </Button>
           </div>
-          {/* </div> */}
-          <div className="bg-white rounded-2xl h-1/2 w-1/2">
-            <p>پشتیان ابرفردوسی همراهی همیشگی</p>
-          </div>
+        </div>
+        <div className="flex bg-white text-secondary rounded-2xl w-1/2 p-4">
+          <p>پشتیان ابرفردوسی همراهی همیشگی</p>
         </div>
       </Card>
 
@@ -56,19 +54,19 @@ export default function RelatedServices() {
           <p className="text-base">
             همه چیز درباره سرور ابری را در بلاگ ما بخوانید.
           </p>
-          <Button variant="secondary">مطالعه مقالات</Button>
+          <Button variant="simple">مطالعه مقالات</Button>
         </div>
       </Card>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <RowCard
-          title="مقایسه تخصصی انواع سیستم عامل های سرور ابری"
-          description="استفاده از سرور ابری یک راه حل هوشمندانه برای پیشبرد اهداف تجاری شماست..."
+          title="سرور ابری چیست"
+          description=" وجود آپ‌تایم ۲۴ ساعته در سرور ابری یا صرفا یک ویژگی مطلوب نیست، بلکه یک نیاز اساسی برای دنیای به هم پیوستن استCloud Server "
           img="/images/cloud.png"
         />
         <RowCard
-          title="سرور ابری چیست"
-          description="وجود آپ‌تایم ۲۴ ساعته در سرور ابری یا Cloud Server"
+          title="مقایسه تخصصی انواع سیستم عامل های سرور ابری"
+          description="  استفاده از سرور ابری یک راه حل هوشمندانه برای پیشبرد اهداف تجاری شماست زیرا علاوه بر قیمت به صرفه، امنیت داده های شمارا تضمین میکند و "
           img="/images/cloud.png"
         />
       </div>
