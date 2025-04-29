@@ -20,13 +20,15 @@ const buttonVariants = cva(
         ghost:
           'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
         link: 'text-primary underline-offset-4 hover:underline',
-        royal_blue: 'bg-[#4169E1] text-white hover:bg-[#3559b8]',
+        royal_blue: 'bg-[#4169E1] text-white ',
         royal_blue_outlined:
           'bg-white text-[#4169E1] border border-[#4169E1] border-solid border-[1.5px]',
         light_green:
           'bg-white text-[#20B2AA] border border-[#20B2AA] border-solid border-[1.5px]',
-        simple: 'bg-white text-[#3044C5] p-1 md:px-3 md:py-2',
+        simple: 'bg-white text-[#29347F] p-1 md:px-3 md:py-2',
+        disabled: 'bg-[#F1F4FD] text-[#54565B]',
       },
+
       size: {
         default: 'h-9 px-4 py-2 has-[>svg]:px-3',
         sm: 'h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5',

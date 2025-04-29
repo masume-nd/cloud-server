@@ -51,13 +51,13 @@ export default function Header() {
             </SheetContent>
           </Sheet>
 
-          <span className="font-bold text-primary">ابرفردوسی</span>
+          {/* <span className="font-bold text-primary">ابرفردوسی</span> */}
           <Image
             src="/images/logo.png"
             alt="Logo"
             className="h-6"
-            width={24}
-            height={24}
+            width={107}
+            height={40}
           />
         </div>
 

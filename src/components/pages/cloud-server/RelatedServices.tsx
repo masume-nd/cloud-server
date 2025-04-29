@@ -9,6 +9,7 @@ import {
   Server,
   Ticket,
 } from 'lucide-react';
+import SimpleCard from './SimpleCard';
 
 export default function RelatedServices() {
   return (
@@ -49,15 +50,10 @@ export default function RelatedServices() {
         آموزش‌های مرتبط
       </h4>
 
-      <Card className="bg-gradient-to-l from-[#2E4BA0] to-[#4169E1] text-white px-6 h-22 rounded-2xl">
-        <div className="flex justify-between items-center">
-          <p className="text-base">
-            همه چیز درباره سرور ابری را در بلاگ ما بخوانید.
-          </p>
-          <Button variant="simple">مطالعه مقالات</Button>
-        </div>
-      </Card>
-
+      <SimpleCard
+        title=" همه چیز درباره سرور ابری را در بلاگ ما بخوانید."
+        buttonText="مطالعه مقالات"
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <RowCard
           title="سرور ابری چیست"
